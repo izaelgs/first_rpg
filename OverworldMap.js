@@ -28,11 +28,27 @@ window.OverworldMaps = {
                 x: utils.widthGrid(5),
                 y: utils.widthGrid(6),
             }),
-            // npc1: new Person({
-            //     x: utils.widthGrid(4),
-            //     y: utils.widthGrid(9),
-            //     src: "/images/characters/people/npc1.png"
-            // })
+            npc1: new Person({
+                x: utils.widthGrid(9),
+                y: utils.widthGrid(5),
+                src: "/images/characters/people/npc1.png"
+            })
+        }
+    },
+    MyRoom: {
+        lowerSrc: "/images/maps/MyRoomLower.png",
+        upperSrc: "/images/maps/MyRoomUpper.png",
+        gameObjects: {
+            hero: new Person({
+                x: utils.widthGrid(5),
+                y: utils.widthGrid(6),
+            }),
+            me: new Person({
+                isPlayerControled: true,
+                x: utils.widthGrid(9),
+                y: utils.widthGrid(5),
+                src: "/images/characters/people/me.png"
+            })
         }
     },
     Kitchen: {
